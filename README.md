@@ -2,17 +2,37 @@
 
 ## Overview
 
-This Hospital Management System is a web application developed using the MERN (MongoDB, Express.js, React, Node.js) stack with Redux for state management, TailwindCSS for responsive UI design, and Framer Motion for smooth animations. The system aims to streamline hospital operations, improve patient care, and enhance overall efficiency.
+A full-stack Hospital Management System built with the MERN stack (MongoDB, Express.js, React, Node.js), Redux for state management, TailwindCSS for responsive UI, and Framer Motion for smooth animations. The system aims to streamline hospital operations, improve patient care, and enhance overall efficiency.
 
 ## Features
 
-- **User Authentication**: Secure user authentication system for administrators, doctors, and staff members.
-- **Patient Management**: Easily manage patient records, including admission, discharge, and medical history.
-- **Appointment Scheduling**: Efficiently schedule and manage patient appointments with doctors.
-- **Inventory Management**: Keep track of medical supplies and equipment inventory.
-- **Billing System**: Generate and manage invoices for patient services.
-- **Reports and Analytics**: Generate insightful reports and analytics for better decision-making.
-- **Responsive Design**: TailwindCSS is used for a desktop-friendly and responsive user interface.
+### Dashboard Features:
+- Dashboard Overview
+- Add Admin
+- Add Doctor
+- Add Receptionists
+- See all Doctors
+- See all Appointments
+- Manage Appointments
+
+### Backend Features:
+- Secure REST API
+- JWT Authentication
+- MongoDB Integration
+- Role-based Access Control
+
+### Frontend Features:
+- Book Appointment
+- Send Message to Admin
+- Login / Register
+- Responsive Design
+
+## Technologies Used
+
+- **Frontend:** React, Redux, TailwindCSS, Framer Motion
+- **Backend:** Node.js, Express.js
+- **Database:** MongoDB
+- **Authentication:** JWT
 
 ## Prerequisites
 
@@ -21,49 +41,62 @@ Before you begin, ensure you have the following installed:
 - [Node.js](https://nodejs.org/)
 - [MongoDB](https://www.mongodb.com/try/download/community)
 
-## Getting Started
+## Setup Instructions
 
 1. **Clone the repository:**
 
-   ```bash
-   git clone https://github.com/iamrealkkd/hospital-management-system.git
-   ```
+```bash
+git clone https://github.com/iamrealkkd/hospital-management-system.git
+```
 
-2. **Navigate to the project directory:**
+2. **Install backend dependencies:**
 
-   ```bash
-   cd frontend
-   ```
+```bash
+cd hospital-management-system/backend
+npm install
+```
 
-3. **Install dependencies:**
+3. **Set up environment variables:**
 
-   ```bash
-   npm install
-   ```
+Create a `.env` file in the `backend` directory:
 
-4. **Set up MongoDB:**
-   - Create a MongoDB database.
-   - Update the MongoDB connection string in `.env`.
-   - Create a secret JWT key in `server/config/config.js`.
+```
+PORT=5000
+DB_URI=your_mongodb_connection_string
+JWT_SECRET=your_jwt_secret
+```
 
-5. **Start the application:**
+4. **Install frontend dependencies:**
 
-   ```bash
-   npm run dev
-   ```
+```bash
+cd ../frontend
+npm install
+```
+
+5. **Run the development servers:**
+
+Start the backend server:
+
+```bash
+cd backend
+node server.js
+```
+
+Start the frontend server:
+
+```bash
+cd frontend
+npm run dev
+```
+
+6. **Access the application:**
+
+Open your browser and navigate to `http://localhost:5173`.
 
 ## Contributing
 
-We welcome contributions! Please follow our contribution guidelines.
+Contributions are welcome! Feel free to submit pull requests, bug reports, or feature requests.
 
 ## License
 
-This project is licensed under the MIT License.
-
-## Acknowledgments
-
-Thanks to the MERN, Redux, TailwindCSS, and Framer Motion communities for their amazing tools and resources.
-
-## Contact
-
-For any inquiries or issues, please open an issue on the [GitHub repository](https://github.com/iamrealkkd/hospital-management-system).# hospital-management-system
+This project is licensed under the [MIT License](LICENSE).
