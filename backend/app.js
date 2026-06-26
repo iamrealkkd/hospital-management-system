@@ -31,7 +31,7 @@ app.use(
 );
 
 app.use("/api/v1/message", messageRouter);
-app.use("/api/appointment" appointmentRouter);
+app.use("/api/appointment", appointmentRouter);
 
 dbConnection()
 
